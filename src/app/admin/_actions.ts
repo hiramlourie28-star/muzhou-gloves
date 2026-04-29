@@ -196,6 +196,25 @@ export async function removeAdmin(formData: FormData): Promise<void> {
   revalidatePath("/admin/team");
 }
 
+export async function setInquiryStatus(formData: FormData): Promise<void> {
+  await requireAdmin();
+  const id = String(formData.get("id") ?? "");
+  const status = String(formData.get("status") ?? "");
+  if (!id || !["new", "contacted", "closed"].includes(status)) return;
+  const sb = createServiceClient();
+  await sb.from("inquiries").update({ status }).eq("id", id);
+  revalidatePath("/admin/inquiries");
+}
+
+export async function deleteInquiry(formData: FormData): Promise<void> {
+  await requireAdmin();
+  const id = String(formData.get("id") ?? "");
+  if (!id) return;
+  const sb = createServiceClient();
+  await sb.from("inquiries").delete().eq("id", id);
+  revalidatePath("/admin/inquiries");
+}
+
 export async function uploadImage(formData: FormData) {
   await requireAdmin();
   const sb = await createClient();

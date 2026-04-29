@@ -1,22 +1,27 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { motion } from "framer-motion";
+import { submitInquiry } from "../_actions/inquiry";
 
 export default function ContactContent() {
   const t = useTranslations();
   const locale = useLocale();
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [pending, startTransition] = useTransition();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const data = Object.fromEntries(new FormData(form).entries());
-    console.log("Contact form:", data);
-    setSubmitted(true);
-    form.reset();
-  };
+  function onSubmit(formData: FormData) {
+    setError(null);
+    formData.set("locale", locale);
+    formData.set("source", "contact");
+    startTransition(async () => {
+      const res = await submitInquiry(formData);
+      if (res.ok) setSubmitted(true);
+      else setError(res.error ?? "提交失败，请稍后再试");
+    });
+  }
 
   return (
     <div className="pt-24 pb-16">
@@ -40,7 +45,7 @@ export default function ContactContent() {
                 <p className="text-peak-gold font-serif text-xl mb-2">{t("contact.form.success")}</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <form action={onSubmit} className="flex flex-col gap-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <input
                     name="name"
@@ -79,11 +84,13 @@ export default function ContactContent() {
                   placeholder={t("contact.form.message")}
                   className="border-b border-alpine-400/40 bg-transparent px-0 py-3 text-sm text-mountain-800 placeholder:text-alpine-500 outline-none focus:border-mountain-800 transition-colors resize-none"
                 />
+                {error && <p className="text-sm text-red-600">{error}</p>}
                 <button
                   type="submit"
-                  className="mt-4 px-8 py-3 text-sm font-medium bg-mountain-800 text-white hover:bg-mountain-700 transition-colors self-start"
+                  disabled={pending}
+                  className="mt-4 px-8 py-3 text-sm font-medium bg-mountain-800 text-white hover:bg-mountain-700 disabled:opacity-50 transition-colors self-start"
                 >
-                  {t("contact.form.submit")}
+                  {pending ? "..." : t("contact.form.submit")}
                 </button>
               </form>
             )}

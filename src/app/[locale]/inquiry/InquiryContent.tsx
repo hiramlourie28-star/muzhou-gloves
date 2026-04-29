@@ -1,25 +1,31 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { useState, useTransition } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { PRODUCT_CATEGORIES as categoryList } from "@/lib/supabase/types";
+import { submitInquiry } from "../_actions/inquiry";
 
 export default function InquiryContent() {
   const t = useTranslations();
+  const locale = useLocale();
   const searchParams = useSearchParams();
   const presetProduct = searchParams.get("product") ?? "";
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [pending, startTransition] = useTransition();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const data = Object.fromEntries(new FormData(form).entries());
-    console.log("Inquiry form:", data);
-    setSubmitted(true);
-    form.reset();
-  };
+  function onSubmit(formData: FormData) {
+    setError(null);
+    formData.set("locale", locale);
+    formData.set("source", "inquiry");
+    startTransition(async () => {
+      const res = await submitInquiry(formData);
+      if (res.ok) setSubmitted(true);
+      else setError(res.error ?? "提交失败，请稍后再试");
+    });
+  }
 
   return (
     <div className="pt-24 pb-16">
@@ -47,7 +53,7 @@ export default function InquiryContent() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto px-6 py-20"
         >
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+          <form action={onSubmit} className="flex flex-col gap-5">
             {presetProduct && (
               <input type="hidden" name="referredProduct" value={presetProduct} />
             )}
@@ -84,9 +90,10 @@ export default function InquiryContent() {
               className="border-b border-alpine-400/40 bg-transparent px-0 py-3 text-sm text-mountain-800 placeholder:text-alpine-500 outline-none focus:border-mountain-800 transition-colors resize-none" />
             <textarea name="message" rows={2} placeholder={t("inquiry.form.message")}
               className="border-b border-alpine-400/40 bg-transparent px-0 py-3 text-sm text-mountain-800 placeholder:text-alpine-500 outline-none focus:border-mountain-800 transition-colors resize-none" />
-            <button type="submit"
-              className="mt-6 px-8 py-3 text-sm font-medium bg-mountain-800 text-white hover:bg-mountain-700 transition-colors self-start">
-              {t("inquiry.form.submit")}
+            {error && <p className="text-sm text-red-600">{error}</p>}
+            <button type="submit" disabled={pending}
+              className="mt-6 px-8 py-3 text-sm font-medium bg-mountain-800 text-white hover:bg-mountain-700 disabled:opacity-50 transition-colors self-start">
+              {pending ? "..." : t("inquiry.form.submit")}
             </button>
           </form>
         </motion.div>

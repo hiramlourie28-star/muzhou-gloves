@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { signOut } from "./_actions";
-import { isCurrentUserAdmin } from "@/lib/supabase/server";
+import { isCurrentUserAdmin, createServiceClient } from "@/lib/supabase/server";
 import "@/app/globals.css";
 
 export const metadata = {
@@ -11,6 +11,15 @@ export const metadata = {
 
 export default async function AdminLayout({ children }: { children: ReactNode }) {
   const admin = await isCurrentUserAdmin();
+  let newCount = 0;
+  if (admin) {
+    const sb = createServiceClient();
+    const { count } = await sb
+      .from("inquiries")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "new");
+    newCount = count ?? 0;
+  }
 
   return (
     <html lang="zh">
@@ -25,6 +34,14 @@ export default async function AdminLayout({ children }: { children: ReactNode })
                 </Link>
                 <div className="flex items-center gap-5 text-sm text-gray-600">
                   <Link href="/admin" className="hover:text-blue-600">商品</Link>
+                  <Link href="/admin/inquiries" className="hover:text-blue-600 relative">
+                    询价
+                    {newCount > 0 && (
+                      <span className="ml-1 inline-flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[10px] font-bold rounded-full bg-red-600 text-white">
+                        {newCount > 99 ? "99+" : newCount}
+                      </span>
+                    )}
+                  </Link>
                   <Link href="/admin/team" className="hover:text-blue-600">管理员</Link>
                   <span className="text-gray-400">|</span>
                   <span>{admin.email}</span>

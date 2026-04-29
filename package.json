@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@alicloud/alimt20181012": "^1.4.2",
+    "@alicloud/dysmsapi20170525": "^4.5.1",
     "@alicloud/openapi-client": "^0.4.15",
     "@alicloud/tea-util": "^1.4.11",
     "@netlify/next": "^1.4.9",
