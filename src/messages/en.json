@@ -1,0 +1,80 @@
+{
+  "site": {
+    "title": "Muzhou Gloves - Professional Gloves Manufacturer",
+    "description": "Muzhou Gloves Co., Ltd., 30+ years expertise in gloves R&D and manufacturing. Specializing in leather gloves, ski gloves, fabric gloves, splice gloves, mittens, animal-shaped gloves, fingerless gloves, and more.",
+    "companyName": "Muzhou Gloves Co., Ltd."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "inquiry": "Inquiry"
+  },
+  "hero": {
+    "title": "30 Years of Craftsmanship",
+    "subtitle": "Guarding Every Summit",
+    "description": "Professional Gloves Manufacturer | 1M+ Annual Output | Full Customization",
+    "ctaProducts": "View Products",
+    "ctaInquiry": "Inquire Now"
+  },
+  "brand": {
+    "experience": { "title": "30 Years Heritage", "desc": "Deep expertise in gloves manufacturing with relentless pursuit of quality" },
+    "capacity": { "title": "Million-Level Output", "desc": "Well-established production lines with annual capacity exceeding 1 million pairs" },
+    "quality": { "title": "Global Quality Standards", "desc": "Rigorous QC system, products exported to markets worldwide" }
+  },
+  "categories": {
+    "title": "Categories",
+    "subtitle": "Full Coverage · Professional Customization",
+    "ski": "Ski Gloves",
+    "leather": "Leather Gloves",
+    "fabric": "Fabric Gloves",
+    "splice": "Fashion Splice",
+    "mittens": "Mittens",
+    "animals": "Animal Gloves",
+    "fingerless": "Fingerless Gloves",
+    "lace": "Lace Gloves",
+    "sports": "Sports Gloves"
+  },
+  "featured": { "title": "Featured Products", "subtitle": "Every pair crafted with dedication", "viewDetail": "Details", "inquire": "Inquire" },
+  "factory": {
+    "title": "Manufacturing Excellence", "subtitle": "In-House Factory · Quality Control · Reliable Supply",
+    "desc": "Muzhou Gloves operates a complete production line system. From raw material selection to finished product shipping, every step follows strict quality standards. Annual capacity exceeds one million pairs, ensuring stable delivery timelines.",
+    "stats1": "Annual Output", "stats2": "1M+ Pairs", "stats3": "Production Lines", "stats4": "8+", "stats5": "Export Countries", "stats6": "30+"
+  },
+  "cta": { "title": "Looking for a Reliable Gloves Supplier?", "subtitle": "From design to production, we offer one-stop gloves customization solutions", "button": "Contact Us Now" },
+  "about": {
+    "title": "About Muzhou", "subtitle": "Over 30 years of heritage, dedicated to crafting the perfect gloves",
+    "intro": "Muzhou Gloves Co., Ltd. has been deeply engaged in the gloves industry for over 30 years, focusing on R&D and production with craftsmanship. Our annual output exceeds one million pairs, specializing in handmade leather gloves, fabric gloves, lace gloves, sports gloves, sun protection gloves, casual fashion gloves, and other full-category gloves products.",
+    "intro2": "We consistently maintain strict quality control, persist in innovative R&D of new styles, and focus on providing stable, high-quality products with reliable and thoughtful service. Upholding our integrity-based business philosophy, we work together with domestic and international clients for mutual benefit and shared growth.",
+    "timeline": {
+      "title": "Our Journey",
+      "item1_year": "1990s", "item1_desc": "Rooted in the homeland of gloves, preserving handcrafting traditions",
+      "item2_year": "2000s", "item2_desc": "Established at Yiwu International Trade Mart, expanding globally",
+      "item3_year": "2010s", "item3_desc": "Built in-house factory, achieving full-chain quality control",
+      "item4_year": "Today", "item4_desc": "Annual output of 1M+ pairs, exported to 30+ countries worldwide"
+    },
+    "cert_title": "Quality Commitment", "cert_desc": "Every pair of gloves undergoes rigorous quality inspection before shipping, ensuring materials, craftsmanship, and comfort meet our standards. We support custom sample orders, logo customization, and packaging customization."
+  },
+  "contact": {
+    "title": "Contact Us", "subtitle": "Looking forward to working with you",
+    "address_label": "Address", "address": "Stalls 37908-37909, Gate 82, 23rd Street, 2F, District 4, Yiwu International Trade Mart, Yiwu, Zhejiang, China",
+    "phone_label": "Phone", "phone": "+86 13566980150", "contact_person": "Contact: Ren Deyou",
+    "form": { "name": "Your Name", "company": "Company", "email": "Email", "phone": "Phone", "product": "Product of Interest", "message": "Message", "submit": "Submit", "success": "Submitted! We will contact you shortly." }
+  },
+  "inquiry": {
+    "title": "Custom Inquiry", "subtitle": "Tell us your requirements, and we'll provide a tailored solution",
+    "form": { "name": "Your Name", "company": "Company", "email": "Email", "phone": "Phone", "productType": "Product Type", "quantity": "Quantity", "size": "Size", "material": "Material", "custom": "Custom Requirements", "message": "Additional Notes", "submit": "Submit Inquiry", "success": "Inquiry submitted! We'll contact you within 24 hours." }
+  },
+  "footer": { "company": "Muzhou Gloves Co., Ltd.", "rights": "All Rights Reserved", "tagline": "Craftsmanship · Quality · Trust" },
+  "products": { "title": "Products", "subtitle": "Full Range · Professional Customization", "all": "All", "noProducts": "No products found", "specs": { "material": "Material", "size": "Size", "moq": "MOQ", "delivery": "Delivery", "features": "Features", "daysRange": "{min}–{max} days", "daysFrom": "{n}+ days", "daysUpTo": "Up to {n} days" }, "related": "Related", "inquiryCta": "Interested? Inquire for customization" },
+  "ski": { "name": "Ski Gloves", "desc": "Waterproof, windproof, touchscreen-compatible ski gloves. Customizable for men, women, and children in five-finger and mitten styles. Made with high-performance waterproof fabrics and thick warm lining." },
+  "leather": { "name": "Leather Gloves", "desc": "Premium sheepskin, deerskin, and calfskin leather gloves and mittens for men and women. Meticulously handcrafted with fine leather that is soft, breathable, and warm." },
+  "fabric": { "name": "Fabric Gloves", "desc": "Gloves made from Develon, rabbit fur, deerskin velvet, cashmere and other composite short-pile fabrics for men and women. Soft, comfortable, excellent warmth retention, fashionable and versatile." },
+  "splice": { "name": "Fashion Splice Gloves", "desc": "Gloves made with different materials on the palm and back, following current fabric trends. AB-version splice design combining fashion and practicality." },
+  "mittens": { "name": "Mittens", "desc": "Mittens made from various fabrics for men, women, and children. Using imitation otter fur, new-material arctic velvet and other premium linings for superior warmth." },
+  "animals": { "name": "Animal-Shaped Gloves", "desc": "Fabric gloves crafted into various animal shapes, combining fun and warmth. Perfect for parent-child activities and holiday gifts." },
+  "fingerless": { "name": "Fingerless Gloves", "desc": "Fashionable fingerless gloves made from various fabrics. Stylish and versatile, providing warmth while keeping fingers free." },
+  "lace": { "name": "Lace & Decorative Gloves", "desc": "Decorative sun-protection gloves made from various lace fabrics. Elegant and refined, combining decorative beauty with sun protection for spring and summer." },
+  "sports": { "name": "Sports & Functional Gloves", "desc": "Sports, cycling and functional gloves. Made with high-elasticity breathable fabrics, anti-slip and wear-resistant, providing professional hand protection for sports enthusiasts." }
+}

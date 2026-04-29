@@ -1,0 +1,73 @@
+{
+  "site": {
+    "title": "Muzhou Gloves - Fabricante Profissional de Luvas",
+    "description": "Muzhou Gloves Co., Ltd., com mais de 30 anos de experiência em P&D e fabricação de luvas. Especializados em luvas de couro, esqui, tecido, renda, esportivas, proteção solar e mais.",
+    "companyName": "Muzhou Gloves Co., Ltd."
+  },
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "inquiry": "Consultar"
+  },
+  "hero": {
+    "title": "30 Anos de Artesanato",
+    "subtitle": "Protegendo Cada Cume",
+    "description": "Fabricante Profissional de Luvas | 1M+ Produção Anual | Personalização Total",
+    "ctaProducts": "Ver Produtos",
+    "ctaInquiry": "Consultar Agora"
+  },
+  "brand": {
+    "experience": { "title": "30 Anos de Herança", "desc": "Profunda experiência em fabricação de luvas com busca incessante pela qualidade" },
+    "capacity": { "title": "Produção Milionária", "desc": "Linhas de produção bem estabelecidas com capacidade anual superior a 1 milhão de pares" },
+    "quality": { "title": "Padrões Globais", "desc": "Rigoroso sistema de CQ, produtos exportados para mercados em todo o mundo" }
+  },
+  "categories": {
+    "title": "Categorias",
+    "subtitle": "7 Linhas de Produtos",
+    "ski": "Luvas de Esqui",
+    "leather": "Luvas de Couro",
+    "fabric": "Luvas de Tecido",
+    "lace": "Luvas de Renda",
+    "sports": "Luvas Esportivas",
+    "sun": "Proteção Solar",
+    "fashion": "Moda Casual"
+  },
+  "featured": { "title": "Produtos em Destaque", "subtitle": "Cada par criado com dedicação", "viewDetail": "Detalhes", "inquire": "Consultar" },
+  "factory": {
+    "title": "Excelência em Fabricação",
+    "subtitle": "Fábrica Própria · Controle de Qualidade · Fornecimento Confiável",
+    "desc": "A Muzhou Gloves opera um sistema completo de linhas de produção. Da seleção de matérias-primas ao envio do produto final, cada etapa segue rigorosos padrões de qualidade. A capacidade anual excede um milhão de pares, garantindo prazos de entrega estáveis.",
+    "stats1": "Produção Anual", "stats2": "1M+ Pares", "stats3": "Linhas de Prod.", "stats4": "8+", "stats5": "Países Exportação", "stats6": "30+"
+  },
+  "cta": { "title": "Procurando um Fornecedor Confiável de Luvas?", "subtitle": "Do design à produção, oferecemos soluções completas de personalização", "button": "Fale Conosco" },
+  "about": {
+    "title": "Sobre a Muzhou", "subtitle": "Mais de 30 anos de herança, dedicados a criar as luvas perfeitas",
+    "intro": "A Muzhou Gloves Co., Ltd. está profundamente engajada na indústria de luvas há mais de 30 anos, com foco em P&D e produção artesanal. Nossa produção anual excede um milhão de pares, especializando-se em luvas de couro feitas à mão, luvas de tecido, luvas de renda, luvas esportivas, luvas de proteção solar e luvas de moda casual.",
+    "intro2": "Mantemos consistentemente um rigoroso controle de qualidade, persistimos em P&D inovadora de novos estilos e nos concentramos em fornecer produtos estáveis e de alta qualidade com serviço confiável e atencioso. Defendendo nossa filosofia empresarial baseada na integridade, trabalhamos juntos com clientes nacionais e internacionais para benefício mútuo e crescimento compartilhado.",
+    "timeline": {
+      "title": "Nossa Jornada",
+      "item1_year": "1990s", "item1_desc": "Enraizados na terra natal das luvas, preservando tradições artesanais",
+      "item2_year": "2000s", "item2_desc": "Presença estabelecida no Yiwu International Trade Mart, expandindo globalmente",
+      "item3_year": "2010s", "item3_desc": "Fábrica própria construída, alcançando controle de qualidade de cadeia completa",
+      "item4_year": "Hoje", "item4_desc": "Produção anual de 1M+ pares, exportados para mais de 30 países"
+    },
+    "cert_title": "Compromisso de Qualidade", "cert_desc": "Cada par de luvas passa por rigorosa inspeção de qualidade antes do envio, garantindo que materiais, artesanato e conforto atendam aos nossos padrões. Apoiamos pedidos de amostras personalizadas, personalização de logotipo e personalização de embalagem."
+  },
+  "contact": {
+    "title": "Contato", "subtitle": "Esperamos trabalhar com você",
+    "address_label": "Endereço", "address": "Estandes 37908-37909, Portão 82, Rua 23, 2F, Distrito 4, Yiwu International Trade Mart, Yiwu, Zhejiang, China",
+    "phone_label": "Telefone", "phone": "+86 13566980150", "contact_person": "Contato: Ren Deyou",
+    "form": { "name": "Seu Nome", "company": "Empresa", "email": "E-mail", "phone": "Telefone", "product": "Produto de Interesse", "message": "Mensagem", "submit": "Enviar Consulta", "success": "Enviado com sucesso! Entraremos em contato em breve." }
+  },
+  "inquiry": {
+    "title": "Consulta Personalizada", "subtitle": "Conte-nos seus requisitos e forneceremos uma solução sob medida",
+    "form": { "name": "Seu Nome", "company": "Empresa", "email": "E-mail", "phone": "Telefone", "productType": "Tipo de Produto", "quantity": "Quantidade", "size": "Tamanho", "material": "Material Preferido", "custom": "Requisitos Personalizados (Logo/Embalagem, etc.)", "message": "Notas Adicionais", "submit": "Enviar Consulta", "success": "Consulta enviada! Entraremos em contato em 24 horas." }
+  },
+  "footer": { "company": "Muzhou Gloves Co., Ltd.", "rights": "Todos os Direitos Reservados", "tagline": "Artesanato · Qualidade · Confiança" },
+  "products": { "title": "Produtos", "subtitle": "Linha Completa · Personalização Profissional", "all": "Todos", "noProducts": "Nenhum produto", "specs": { "material": "Material", "size": "Tamanho", "moq": "MOQ", "delivery": "Entrega", "features": "Características", "daysRange": "{min}–{max} dias", "daysFrom": "A partir de {n} dias", "daysUpTo": "Até {n} dias" }, "related": "Produtos Relacionados", "inquiryCta": "Interessado? Solicite personalização" },
+  "ski": { "name": "Luvas de Esqui", "desc": "Luvas de esqui impermeáveis, corta-vento e compatíveis com tela sensível ao toque. Personalizáveis para homem, mulher e criança nos estilos cinco dedos e luva única." },
+  "leather": { "name": "Luvas de Couro", "desc": "Luvas premium de pele de ovelha, veado e bezerro para homem e mulher. Meticulosamente artesanais com couro fino, macio, respirável e quente." },
+  "fabric": { "name": "Luvas de Tecido", "desc": "Luvas de Develon, pele de coelho, veludo de pele de veado, cashmere e outros tecidos compostos de pelo curto para homem e mulher. Suaves e confortáveis ao toque, excelente retenção de calor." }
+}

@@ -1,0 +1,73 @@
+{
+  "site": {
+    "title": "Muzhou Gloves - Fabricante Profesional de Guantes",
+    "description": "Muzhou Gloves Co., Ltd., con más de 30 años de experiencia en I+D y fabricación de guantes. Especializados en guantes de cuero, esquí, tela, encaje, deportivos, protección solar y más.",
+    "companyName": "Muzhou Gloves Co., Ltd."
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "inquiry": "Consultar"
+  },
+  "hero": {
+    "title": "30 Años de Artesanía",
+    "subtitle": "Protegiendo Cada Cumbre",
+    "description": "Fabricante Profesional de Guantes | 1M+ Producción Anual | Personalización Total",
+    "ctaProducts": "Ver Productos",
+    "ctaInquiry": "Consultar Ahora"
+  },
+  "brand": {
+    "experience": { "title": "30 Años de Herencia", "desc": "Profunda experiencia en fabricación de guantes con búsqueda incesante de calidad" },
+    "capacity": { "title": "Producción Millonaria", "desc": "Líneas de producción bien establecidas con capacidad anual superior a 1 millón de pares" },
+    "quality": { "title": "Estándares Globales", "desc": "Riguroso sistema de control de calidad, productos exportados a mercados de todo el mundo" }
+  },
+  "categories": {
+    "title": "Categorías",
+    "subtitle": "7 Líneas de Productos",
+    "ski": "Guantes de Esquí",
+    "leather": "Guantes de Cuero",
+    "fabric": "Guantes de Tela",
+    "lace": "Guantes de Encaje",
+    "sports": "Guantes Deportivos",
+    "sun": "Protección Solar",
+    "fashion": "Moda Casual"
+  },
+  "featured": { "title": "Productos Destacados", "subtitle": "Cada par creado con dedicación", "viewDetail": "Detalles", "inquire": "Consultar" },
+  "factory": {
+    "title": "Excelencia en Fabricación",
+    "subtitle": "Fábrica Propia · Control de Calidad · Suministro Confiable",
+    "desc": "Muzhou Gloves opera un sistema completo de líneas de producción. Desde la selección de materias primas hasta el envío del producto final, cada paso sigue estrictos estándares de calidad. La capacidad anual supera el millón de pares, garantizando plazos de entrega estables.",
+    "stats1": "Producción Anual", "stats2": "1M+ Pares", "stats3": "Líneas de Prod.", "stats4": "8+", "stats5": "Países Exportación", "stats6": "30+"
+  },
+  "cta": { "title": "¿Busca un Proveedor Confiable de Guantes?", "subtitle": "Del diseño a la producción, ofrecemos soluciones integrales de personalización", "button": "Contáctenos" },
+  "about": {
+    "title": "Sobre Muzhou", "subtitle": "Más de 30 años de herencia, dedicados a crear los guantes perfectos",
+    "intro": "Muzhou Gloves Co., Ltd. lleva más de 30 años profundamente comprometida con la industria del guante, centrándose en I+D y producción artesanal. Nuestra producción anual supera el millón de pares, especializándonos en guantes de cuero hechos a mano, guantes de tela, guantes de encaje, guantes deportivos, guantes de protección solar y guantes de moda casual.",
+    "intro2": "Mantenemos constantemente un estricto control de calidad, persistimos en I+D innovadora de nuevos estilos y nos enfocamos en proporcionar productos estables y de alta calidad con un servicio confiable y atento. Defendiendo nuestra filosofía empresarial basada en la integridad, trabajamos junto con clientes nacionales e internacionales para beneficio mutuo y crecimiento compartido.",
+    "timeline": {
+      "title": "Nuestra Trayectoria",
+      "item1_year": "1990s", "item1_desc": "Arraigados en la cuna del guante, preservando tradiciones artesanales",
+      "item2_year": "2000s", "item2_desc": "Presencia establecida en Yiwu International Trade Mart, expandiéndonos globalmente",
+      "item3_year": "2010s", "item3_desc": "Fábrica propia construida, logrando control de calidad de cadena completa",
+      "item4_year": "Hoy", "item4_desc": "Producción anual de 1M+ pares, exportados a más de 30 países"
+    },
+    "cert_title": "Compromiso de Calidad", "cert_desc": "Cada par de guantes se somete a una rigurosa inspección de calidad antes del envío, asegurando que los materiales, la artesanía y la comodidad cumplan con nuestros estándares. Apoyamos pedidos de muestras personalizadas, personalización de logotipos y personalización de empaques."
+  },
+  "contact": {
+    "title": "Contacto", "subtitle": "Esperamos trabajar con usted",
+    "address_label": "Dirección", "address": "Puestos 37908-37909, Puerta 82, Calle 23, 2F, Distrito 4, Yiwu International Trade Mart, Yiwu, Zhejiang, China",
+    "phone_label": "Teléfono", "phone": "+86 13566980150", "contact_person": "Contacto: Ren Deyou",
+    "form": { "name": "Su Nombre", "company": "Empresa", "email": "Correo", "phone": "Teléfono", "product": "Producto de Interés", "message": "Mensaje", "submit": "Enviar Consulta", "success": "¡Enviado con éxito! Le contactaremos pronto." }
+  },
+  "inquiry": {
+    "title": "Consulta Personalizada", "subtitle": "Cuéntenos sus requisitos y le proporcionaremos una solución a medida",
+    "form": { "name": "Su Nombre", "company": "Empresa", "email": "Correo", "phone": "Teléfono", "productType": "Tipo de Producto", "quantity": "Cantidad", "size": "Tamaño", "material": "Material Preferido", "custom": "Requisitos Personalizados (Logo/Empaque, etc.)", "message": "Notas Adicionales", "submit": "Enviar Consulta", "success": "¡Consulta enviada! Le contactaremos dentro de 24 horas." }
+  },
+  "footer": { "company": "Muzhou Gloves Co., Ltd.", "rights": "Todos los Derechos Reservados", "tagline": "Artesanía · Calidad · Confianza" },
+  "products": { "title": "Productos", "subtitle": "Gama Completa · Personalización Profesional", "all": "Todos", "noProducts": "Sin productos", "specs": { "material": "Material", "size": "Talla", "moq": "MOQ", "delivery": "Entrega", "features": "Características", "daysRange": "{min}–{max} días", "daysFrom": "Desde {n} días", "daysUpTo": "Hasta {n} días" }, "related": "Productos Relacionados", "inquiryCta": "¿Interesado? Solicite personalización" },
+  "ski": { "name": "Guantes de Esquí", "desc": "Guantes de esquí impermeables, cortavientos y compatibles con pantalla táctil. Personalizables para hombre, mujer y niño en estilos de cinco dedos y manopla." },
+  "leather": { "name": "Guantes de Cuero", "desc": "Guantes de piel de oveja, ciervo y becerro de primera calidad para hombre y mujer. Meticulosamente elaborados a mano con cuero fino, suave, transpirable y cálido." },
+  "fabric": { "name": "Guantes de Tela", "desc": "Guantes de Develon, piel de conejo, terciopelo de piel de ciervo, cachemira y otros tejidos compuestos de pelo corto para hombre y mujer. Suaves y cómodos al tacto, excelente retención del calor." }
+}
