@@ -23,7 +23,10 @@ export default async function AdminLayout({ children }: { children: ReactNode })
                   <span className="text-lg">🧤</span>
                   <span>牧洲手套 · 管理后台</span>
                 </Link>
-                <div className="flex items-center gap-4 text-sm text-gray-600">
+                <div className="flex items-center gap-5 text-sm text-gray-600">
+                  <Link href="/admin" className="hover:text-blue-600">商品</Link>
+                  <Link href="/admin/team" className="hover:text-blue-600">管理员</Link>
+                  <span className="text-gray-400">|</span>
                   <span>{admin.email}</span>
                   <form action={signOut}>
                     <button className="text-red-600 hover:underline">退出</button>

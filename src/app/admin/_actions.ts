@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { createClient, isCurrentUserAdmin } from "@/lib/supabase/server";
+import { createClient, createServiceClient, isCurrentUserAdmin } from "@/lib/supabase/server";
 import { PRODUCT_CATEGORIES, type ProductCategory } from "@/lib/supabase/types";
 import { locales } from "@/i18n/routing";
 import { fillMissingLocales, translateToAll } from "@/lib/aliyun-mt";
@@ -151,6 +151,49 @@ export async function toggleActive(formData: FormData): Promise<void> {
   await sb.from("products").update({ is_active: next }).eq("id", id);
   revalidatePath("/admin");
   revalidatePath("/", "layout");
+}
+
+export async function addAdmin(formData: FormData) {
+  await requireAdmin();
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const password = String(formData.get("password") ?? "");
+
+  if (!email || !email.includes("@")) return { error: "请输入有效邮箱" };
+  if (password.length < 8) return { error: "密码至少 8 位" };
+
+  const svc = createServiceClient();
+
+  const { data: created, error: createErr } = await svc.auth.admin.createUser({
+    email,
+    password,
+    email_confirm: true,
+  });
+  if (createErr || !created.user) {
+    return { error: "创建账号失败：" + (createErr?.message ?? "未知错误") };
+  }
+
+  const { error: insertErr } = await svc
+    .from("admins")
+    .insert({ id: created.user.id, email });
+  if (insertErr) {
+    await svc.auth.admin.deleteUser(created.user.id);
+    return { error: "写入 admins 表失败：" + insertErr.message };
+  }
+
+  revalidatePath("/admin/team");
+  return { success: true, email };
+}
+
+export async function removeAdmin(formData: FormData): Promise<void> {
+  const me = await requireAdmin();
+  const targetId = String(formData.get("id") ?? "");
+  if (!targetId) return;
+  if (targetId === me.id) return;
+
+  const svc = createServiceClient();
+  await svc.from("admins").delete().eq("id", targetId);
+  await svc.auth.admin.deleteUser(targetId);
+  revalidatePath("/admin/team");
 }
 
 export async function uploadImage(formData: FormData) {
